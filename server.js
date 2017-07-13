@@ -33,9 +33,9 @@ app.use((req, res, next) => {
 
 // maintainence page stops everything else from executing
 // its a middleware that is NOT terminated with next();
-app.use((req, res, next) => {
-    res.render('maintenance')
-});
+// app.use((req, res, next) => {
+//     res.render('maintenance')
+// });
 
 app.use(express.static(__dirname + '/public'));
 
