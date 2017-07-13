@@ -73,6 +73,13 @@ app.get('/bad', (req, res)=>{
     });
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Projects Page',
+        pageMessage: 'Portfolia page here'
+    });
+});
+
 // for heroku we set a variable to port
 app.listen(port, () => {
     console.log(`Server is up on port ${port}`);
